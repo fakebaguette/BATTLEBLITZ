@@ -1,0 +1,10 @@
+scoreboard objectives add praet_mount_timer dummy
+
+scoreboard players reset @s praet_use_attack
+tag @s remove praet_has_steed
+clear @s golden_sword[custom_data={NoDrop:1b,praetLongSword:1b}]
+give @s iron_sword[custom_name={"bold":true,"color":"#BAE644","italic":false,"text":"Tipped Gladius"},lore=[[{"bold":false,"color":"white","italic":false,"text":"Hit: Gain a charge every hit. On the "},{"bold":true,"color":"gold","italic":false,"text":"3rd"}],[{"bold":false,"color":"white","italic":false,"text":"charge, your next attack will "},{"bold":true,"color":"dark_green","italic":false,"text":"poison"},{"bold":false,"color":"white","italic":false,"text":" enemies."}]," ",{"bold":false,"color":"white","italic":false,"text":"Hold: When mounted, transform this weapon."}," ",[{"bold":false,"color":"yellow","italic":false,"text":"Mid "},{"bold":false,"color":"white","italic":false,"text":"Attack Damage"}],[{"bold":false,"color":"yellow","italic":false,"text":"Mid"},{"bold":false,"color":"white","italic":false,"text":" Attack Speed"}],[{"bold":false,"color":"red","italic":false,"text":"Low"},{"bold":false,"color":"white","italic":false,"text":" Attack Range"}]],unbreakable={},custom_data={NoDrop:1b,praetShortSword:1b},enchantments={"unbreaking":1},attribute_modifiers=[{id:"attack_damage",type:"attack_damage",amount:2.75,operation:"add_value"},{id:"attack_speed",type:"attack_speed",amount:-2.4,operation:"add_value"}],tooltip_display={hide_tooltip:false,hidden_components:["enchantments","unbreakable","attribute_modifiers","trim","dyed_color","potion_contents","provides_trim_material","potion_duration_scale","enchantment_glint_override","can_break","can_place_on"]}] 1
+attribute @s entity_interaction_range base set 2.5
+
+scoreboard players set @s praet_mount_timer 10
+execute as @a[scores={praet_mount_timer=1..}] at @s run function battle:classes/praetorian/mount/item_cd/cd

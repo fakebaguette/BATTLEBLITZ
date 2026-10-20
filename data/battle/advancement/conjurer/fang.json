@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "red_dye",
+          "components": {
+            "minecraft:custom_data": {
+              "FangsRune":true,
+              "NoDrop":true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "battle:classes/conjurer/fangs/item/use"
+  }
+}

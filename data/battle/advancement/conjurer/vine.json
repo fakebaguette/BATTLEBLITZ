@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "lime_dye",
+          "components": {
+            "minecraft:custom_data": {
+              "VinesRune":true,
+              "NoDrop":true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "battle:classes/conjurer/vines/item/use"
+  }
+}

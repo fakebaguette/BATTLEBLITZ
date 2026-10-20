@@ -1,0 +1,3 @@
+scoreboard objectives add special_events dummy
+tellraw @a[tag=Participant] ["\n[",{"text":"INFO","bold":true,"color":"#ff9500"},{"text":"]","color":"white"},{"text":" ","color":"gold"},"| The ",{"text":"Wall of Fire","bold":true,"color":"#ffb868"},{"text":" ","bold":true},{"text":"is starting!","color":"yellow"}," ",{"text":"The map will slowly start to close in.","color":"white"}]
+function battle:ingame/map_specific/crypt/fire/show_alarm

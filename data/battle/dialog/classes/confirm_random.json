@@ -1,0 +1,270 @@
+{
+  "type": "multi_action",
+  "title": {
+    "text": "Class Info - ",
+    "extra": [
+      "",
+      {
+        "text": "",
+        "extra": [
+          {
+            "text": "R",
+            "color": "light_purple",
+            "bold": true
+          },
+          {
+            "text": "a",
+            "color": "gold",
+            "bold": true
+          },
+          {
+            "text": "n",
+            "color": "green",
+            "bold": true
+          },
+          {
+            "text": "d",
+            "color": "yellow",
+            "bold": true
+          },
+          {
+            "text": "o",
+            "color": "red",
+            "bold": true
+          },
+          {
+            "text": "m",
+            "color": "light_purple",
+            "bold": true
+          }
+        ]
+      },
+      ""
+    ],
+    "bold": true
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "",
+        "extra": [
+          "Are you ",
+          {
+            "text": "sure",
+            "color": "red"
+          },
+          " you want to randomize? \n\nYou will get a random class that hasn't been selected yet."
+        ]
+      },
+      "width": 250
+    },
+    {
+      "type": "plain_message",
+      "contents": {
+        "text": "Stats:\n",
+        "extra": [
+          {
+            "text": "Offense",
+            "extra": [
+              {
+                "text": " - ",
+                "color": "white"
+              },
+              {
+                "text": "|||||||",
+                "color": "gray",
+                "bold": true
+              },
+              {
+                "text": "\n",
+                "color": "gray",
+                "bold": true
+              }
+            ],
+            "color": "red",
+            "hover_event": {
+              "action": "show_text",
+              "value": {
+                "text": "Offense is determined by the class' damage output and ability to stay in combat."
+              }
+            }
+          },
+          {
+            "text": "Durability",
+            "extra": [
+              {
+                "text": " - ",
+                "color": "white"
+              },
+              {
+                "text": "|||||||",
+                "color": "gray",
+                "bold": true
+              },
+              {
+                "text": "\n",
+                "color": "gray",
+                "bold": true
+              }
+            ],
+            "color": "dark_aqua",
+            "hover_event": {
+              "action": "show_text",
+              "value": {
+                "text": "Durability is determined by the class' armor values, healing, shielding, absorption, and resistances."
+              }
+            }
+          },
+          {
+            "text": "Utility",
+            "extra": [
+              {
+                "text": " - ",
+                "color": "white"
+              },
+              {
+                "text": "|||||||",
+                "color": "gray",
+                "bold": true
+              },
+              {
+                "text": "\n",
+                "color": "gray",
+                "bold": true
+              }
+            ],
+            "color": "light_purple",
+            "hover_event": {
+              "action": "show_text",
+              "value": {
+                "text": "Utility is determined by the class' ability to buff allies, immobilize or debuff enemies, destroy concrete, or collect power-ups."
+              }
+            }
+          },
+          {
+            "text": "Complexity",
+            "extra": [
+              {
+                "text": " - ",
+                "color": "white"
+              },
+              {
+                "text": "|||||||",
+                "color": "gray",
+                "bold": true
+              },
+              {
+                "text": "\n",
+                "color": "gray",
+                "bold": true
+              }
+            ],
+            "color": "gold",
+            "hover_event": {
+              "action": "show_text",
+              "value": {
+                "text": "Complexity is determined by the features available in the class and the difficulty of the playing the class."
+              }
+            }
+          }
+        ]
+      },
+      "width": 250
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "",
+        "extra": [
+          "You ",
+          {
+            "text": "cannot ",
+            "color": "dark_red"
+          },
+          {
+            "text": "change your class after you select. Your teammates "
+          },
+          {
+            "text": "cannot",
+            "color": "dark_red"
+          },
+          " choose the same class."
+        ]
+      }
+    }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "columns": 3,
+  "actions": [
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "",
+          {
+            "text": "[",
+            "extra": [
+              {
+                "text": "S",
+                "color": "light_purple",
+                "bold": true
+              },
+              {
+                "text": "E",
+                "color": "gold",
+                "bold": true
+              },
+              {
+                "text": "L",
+                "color": "green",
+                "bold": true
+              },
+              {
+                "text": "E",
+                "color": "yellow",
+                "bold": true
+              },
+              {
+                "text": "C",
+                "color": "red",
+                "bold": true
+              },
+              {
+                "text": "T",
+                "color": "light_purple",
+                "bold": true
+              }
+            ]
+          },
+          "]"
+        ]
+      },
+      "width": 100,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/trigger vote_random"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "BACK",
+            "color": "white",
+            "bold": true
+          },
+          "]"
+        ]
+      },
+      "width": 100,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/trigger class_open_main_dialog"
+      }
+    }
+  ]
+}

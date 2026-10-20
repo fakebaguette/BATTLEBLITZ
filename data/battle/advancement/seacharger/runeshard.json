@@ -1,0 +1,21 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": ["minecraft:nautilus_shell"],
+            "components": {
+            "minecraft:custom_data": {
+              "nautilus_rune":true,
+              "NoDrop":true
+            }
+          }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "battle:classes/seacharger/shell/charge"
+    }
+  }

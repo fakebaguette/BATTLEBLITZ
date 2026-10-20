@@ -1,0 +1,14 @@
+$data remove storage $(i) storage_name
+$data remove storage $(i) name
+$data remove storage $(i) player_display_hp
+$data remove storage $(i) player_hp
+$data remove storage $(i) mob_hp
+$data remove storage $(i) mob_display_hp
+$data remove storage $(i) health_icon
+$data remove storage $(i) resist_icon
+$data remove storage $(i) absorp_icon
+$data remove storage $(i) effect_space
+$data remove storage $(i) clicked_class
+$data remove storage $(i) clicked_class_color
+$data remove storage $(i) clicked_class_display
+$data remove storage $(i) number_of_keys

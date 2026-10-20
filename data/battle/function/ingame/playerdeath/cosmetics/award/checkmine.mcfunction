@@ -1,0 +1,21 @@
+#mine
+execute if entity @s[advancements={battle:cosmetics/extra/mine={19=true,20=false}}] run advancement grant @s only battle:cosmetics/extra/mine 20
+execute if entity @s[advancements={battle:cosmetics/extra/mine={18=true,19=false}}] run advancement grant @s only battle:cosmetics/extra/mine 19
+execute if entity @s[advancements={battle:cosmetics/extra/mine={17=true,18=false}}] run advancement grant @s only battle:cosmetics/extra/mine 18
+execute if entity @s[advancements={battle:cosmetics/extra/mine={16=true,17=false}}] run advancement grant @s only battle:cosmetics/extra/mine 17
+execute if entity @s[advancements={battle:cosmetics/extra/mine={15=true,16=false}}] run advancement grant @s only battle:cosmetics/extra/mine 16
+execute if entity @s[advancements={battle:cosmetics/extra/mine={14=true,15=false}}] run advancement grant @s only battle:cosmetics/extra/mine 15
+execute if entity @s[advancements={battle:cosmetics/extra/mine={13=true,14=false}}] run advancement grant @s only battle:cosmetics/extra/mine 14
+execute if entity @s[advancements={battle:cosmetics/extra/mine={12=true,13=false}}] run advancement grant @s only battle:cosmetics/extra/mine 13
+execute if entity @s[advancements={battle:cosmetics/extra/mine={11=true,12=false}}] run advancement grant @s only battle:cosmetics/extra/mine 12
+execute if entity @s[advancements={battle:cosmetics/extra/mine={10=true,11=false}}] run advancement grant @s only battle:cosmetics/extra/mine 11
+execute if entity @s[advancements={battle:cosmetics/extra/mine={9=true,10=false}}] run advancement grant @s only battle:cosmetics/extra/mine 10
+execute if entity @s[advancements={battle:cosmetics/extra/mine={8=true,9=false}}] run advancement grant @s only battle:cosmetics/extra/mine 9
+execute if entity @s[advancements={battle:cosmetics/extra/mine={7=true,8=false}}] run advancement grant @s only battle:cosmetics/extra/mine 8
+execute if entity @s[advancements={battle:cosmetics/extra/mine={6=true,7=false}}] run advancement grant @s only battle:cosmetics/extra/mine 7
+execute if entity @s[advancements={battle:cosmetics/extra/mine={5=true,6=false}}] run advancement grant @s only battle:cosmetics/extra/mine 6
+execute if entity @s[advancements={battle:cosmetics/extra/mine={4=true,5=false}}] run advancement grant @s only battle:cosmetics/extra/mine 5
+execute if entity @s[advancements={battle:cosmetics/extra/mine={3=true,4=false}}] run advancement grant @s only battle:cosmetics/extra/mine 4
+execute if entity @s[advancements={battle:cosmetics/extra/mine={2=true,3=false}}] run advancement grant @s only battle:cosmetics/extra/mine 3
+execute if entity @s[advancements={battle:cosmetics/extra/mine={1=true,2=false}}] run advancement grant @s only battle:cosmetics/extra/mine 2
+execute if entity @s[advancements={battle:cosmetics/extra/mine={1=false}}] run advancement grant @s only battle:cosmetics/extra/mine 1

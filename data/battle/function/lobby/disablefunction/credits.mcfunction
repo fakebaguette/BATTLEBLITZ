@@ -1,0 +1,1 @@
+schedule clear battle:lobby/credits/click

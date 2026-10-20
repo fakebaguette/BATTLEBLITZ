@@ -1,0 +1,23 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": ["minecraft:end_rod"],
+            "components": {
+              "custom_data": 
+              {
+                "LightRay": 1,
+                "NoDrop": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "battle:classes/lightwielder/on_click"
+    }
+  }
+  

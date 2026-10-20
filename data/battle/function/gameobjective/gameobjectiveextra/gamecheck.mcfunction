@@ -1,0 +1,4 @@
+execute unless entity @a[tag=Participant,tag=Team1] run tellraw @a[tag=Participant] ["\n[",{"text":"INFO","bold":true,"color":"#ff9500"},{"text":"]","color":"white"},{"text":" ","color":"gold"},"| There weren't any players left on one of the teams! ",{"text":"The game has been stopped.","color":"red"}]
+execute unless entity @a[tag=Participant,tag=Team1] run function battle:reset/reset
+execute unless entity @a[tag=Participant,tag=Team2] run tellraw @a[tag=Participant] ["\n[",{"text":"INFO","bold":true,"color":"#ff9500"},{"text":"]","color":"white"},{"text":" ","color":"gold"},"| There weren't any players left on one of the teams! ",{"text":"The game has been stopped.","color":"red"}]
+execute unless entity @a[tag=Participant,tag=Team2] run function battle:reset/reset

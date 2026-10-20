@@ -1,0 +1,3 @@
+summon tnt ~ ~ ~ {Fire:10000,HasVisualFire:1b,Glowing:1b,CustomNameVisible:0b,fuse:20000,Tags:["prospTNT_model_main"],Passengers:[{id:"text_display",billboard:"center",default_background:1b,shadow:0b,see_through:0b,Tags:["prospTNT_text"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,1.35f,0f],scale:[1f,1f,1f]},text:{"bold":true,"color":"#DFFFB0","italic":false,"text":"Prospector's TNT"}}]}
+
+execute as @n[type=tnt,tag=prospTNT_model_main,distance=..1] at @s run ride @s mount @n[type=item,tag=prosp_tnt_item,tag=new_item,distance=..1]

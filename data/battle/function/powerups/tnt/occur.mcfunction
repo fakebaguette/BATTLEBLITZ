@@ -1,0 +1,12 @@
+execute if entity @a[tag=toxinTNTPowUp] as @e[type=item_display,nbt={item:{id:"minecraft:tnt",components:{"minecraft:custom_data":{PowerUp:1b,toxinTNT:1b}}}},limit=1,sort=nearest] at @s run particle entity_effect{color:[0.161,0.549,0.290,1.00]} ~ ~ ~ 0.15 0.15 0.15 0.1 300 normal @a
+
+execute as @a[tag=toxinTNTPowUp] run function battle:ingame/playerdeath/cosmetics/award/checkpower
+
+execute as @a[tag=toxinTNTPowUp] run playsound minecraft:block.amethyst_block.resonate block @s ~ ~ ~ 100
+execute as @a[tag=toxinTNTPowUp] run playsound minecraft:block.note_block.bell block @s ~ ~ ~ 100 1.2
+execute as @a[tag=toxinTNTPowUp] run playsound minecraft:block.note_block.chime block @s ~ ~ ~ 100 1.2
+execute as @a[tag=toxinTNTPowUp] run give @s tnt[custom_name={"bold":true,"color":"dark_green","italic":false,"text":"Toxin TNT"},lore=[[{"bold":false,"color":"white","italic":false,"text":"Use: Place a TNT down. When it explodes, "}],[{"bold":false,"color":"white","italic":false,"text":"destroy nearby concrete blocks, deal "},{"bold":true,"color":"red","italic":false,"text":"6 HP,"}],[{"bold":false,"color":"white","italic":false,"text":"and "},{"bold":true,"color":"dark_green","italic":false,"text":"poison"},{"bold":false,"color":"white","italic":false,"text":" nearby players."}]],custom_data={PowerUp:1b,toxinTNT:1b, NoDrop:1b},enchantments={"minecraft:infinity":1},consumable={consume_seconds:1000000,animation:"block"},food={nutrition:0,saturation:0,can_always_eat:true},tooltip_display={hide_tooltip:false,hidden_components:["enchantments","unbreakable","attribute_modifiers","dyed_color","potion_contents","provides_trim_material","potion_duration_scale","enchantment_glint_override","can_break","can_place_on","banner_patterns","provides_banner_patterns"]}] 1
+execute as @a[tag=toxinTNTPowUp] run tellraw @s ["\n[",{"text":"INFO","bold":true,"color":"#ff9500"},{"text":"]","color":"white"},{"text":" ","color":"gold"},"| ",{"text":"You just collected a Power Up and got:\n- ","color":"#F9CD71"},{"text":"1 Toxin TNT","bold":true,"color":"dark_green"}]
+execute as @a[tag=toxinTNTPowUp] at @s run kill @e[type=item_display,nbt={item:{id:"minecraft:tnt",components:{"minecraft:custom_data":{PowerUp:1b,toxinTNT:1b}}}},distance=..2,limit=1,sort=nearest]
+execute as @a[tag=toxinTNTPowUp] at @s run kill @e[type=text_display,tag=toxinTNT,tag=PowerUp,distance=..4,limit=1,sort=nearest]
+execute as @a[tag=toxinTNTPowUp] run tag @s remove toxinTNTPowUp

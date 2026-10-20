@@ -1,0 +1,1 @@
+$scoreboard players display numberformat @s hp_display fixed ["$(player_display_hp)$(mob_display_hp) §f[§aHP§f]"]

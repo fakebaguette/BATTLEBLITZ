@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "warped_fungus",
+          "components": {
+            "minecraft:custom_data": {
+              "Shroom":true,
+              "NoDrop":true,
+              "PowerUp":true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "battle:powerups/shroom/item/use"
+  }
+}

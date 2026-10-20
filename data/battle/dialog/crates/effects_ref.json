@@ -1,0 +1,391 @@
+{
+  "type": "multi_action",
+  "title": {
+    "text": "Kill Effects Menu",
+    "type": "text",
+    "color": "#feb44d",
+    "bold": true
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Equip your unlocked ",
+        "extra": [
+          {
+            "text": "Kill Effects",
+            "color": "gold",
+            "bold": true
+          },
+          " here."
+        ]
+      },
+      "width": 250
+    }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "exit_action": {
+    "label": {
+      "text": "[",
+      "extra": [
+        {
+          "text": "BACK",
+          "bold": true
+        },
+        "]"
+      ]
+    },
+    "action": {
+        "type": "show_dialog",
+        "dialog": "battle:crates/main_menu"
+      },
+    "width": 110
+  },
+  "columns": 3,
+  "actions": [
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "MAGUS",
+            "color": "light_purple",
+            "bold": true,
+            "strikethrough": false
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger equip_magus_effect"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "MARAUDER",
+            "color": "dark_red",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger equip_marauder_effect"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "NORTHMAN",
+            "color": "blue",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger equip_northman_effect"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "REVENANT",
+            "color": "red",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger equip_revenant_effect"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "LIGHTWIELDER",
+            "color": "#fdfcee",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger equip_lightwielder_effect"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "PROSPECTOR",
+            "color": "#DFFFB0",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger equip_prospector_effect"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "VENATOR",
+            "color": "dark_purple",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger equip_venator_effect"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "PRAETORIAN",
+            "color": "#FF6600",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger equip_praetorian_effect"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "LEGIONNAIRE",
+            "color": "gold",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger equip_legionnaire_effect"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "CONJURER",
+            "color": "dark_green",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger equip_conjurer_effect"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "SEACHARGER",
+            "color": "#45fe98",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger equip_seacharger_effect"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "TRAPSHOOTER",
+            "color": "yellow",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger equip_trapshooter_effect"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "CAVALIER",
+            "color": "#FFD943",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger equip_cavalier_effect"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "EXPLOSION",
+            "color": "red",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger equip_explosion_effect"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "INTERGALACTIC",
+            "color": "aqua",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger equip_intergalactic_effect"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "NOOB",
+            "color": "gold",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger equip_noob_effect"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "CONQUEROR",
+            "color": "#f26050",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger equip_conqueror_effect"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "CHAMPION",
+            "color": "#f8c230",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger equip_champion_effect"
+      }
+    }
+  ]
+}

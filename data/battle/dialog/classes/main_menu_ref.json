@@ -1,0 +1,338 @@
+{
+  "type": "multi_action",
+  "title": {
+    "text": "Class Selection",
+    "type": "text",
+    "color": "#ff6600",
+    "bold": true
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "",
+        "extra": [
+          "Select the class you want to play. Classes are sorted by ",
+          {
+            "text": "Complexity",
+            "color": "gold"
+          },
+          "."
+        ]
+      },
+      "width": 250
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Class information will be displayed before confirming your class. Press Esc to exit.",
+        "extra": [
+          ""
+        ]
+      },
+      "width": 250
+    }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "columns": 3,
+  "actions": [
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "",
+            "extra": [
+              {
+                "text": "R",
+                "color": "light_purple",
+                "bold": true
+              },
+              {
+                "text": "A",
+                "color": "gold",
+                "bold": true
+              },
+              {
+                "text": "N",
+                "color": "green",
+                "bold": true
+              },
+              {
+                "text": "D",
+                "color": "yellow",
+                "bold": true
+              },
+              {
+                "text": "O",
+                "color": "red",
+                "bold": true
+              },
+              {
+                "text": "M",
+                "color": "light_purple",
+                "bold": true
+              }
+            ]
+          },
+          "]"
+        ]
+      },
+      "width": 100,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "battle:classes/confirm_random"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "MAGUS",
+            "color": "light_purple",
+            "bold": true,
+            "strikethrough": false
+          },
+          "]"
+        ]
+      },
+      "width": 100,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "battle:classes/magus"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "MARAUDER",
+            "color": "dark_red",
+            "bold": true
+          },
+          "]"
+        ]
+      },
+      "width": 100,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "battle:classes/marauder"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "NORTHMAN",
+            "color": "blue",
+            "bold": true
+          },
+          "]"
+        ]
+      },
+      "width": 100,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "battle:classes/northman"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "REVENANT",
+            "color": "red",
+            "bold": true
+          },
+          "]"
+        ]
+      },
+      "width": 100,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "battle:classes/revenant"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "LIGHTWIELDER",
+            "color": "#fdfcee",
+            "bold": true
+          },
+          "]"
+        ]
+      },
+      "width": 100,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "battle:classes/lightwielder"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "PROSPECTOR",
+            "color": "#DFFFB0",
+            "bold": true
+          },
+          "]"
+        ]
+      },
+      "width": 100,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "battle:classes/prospector"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "VENATOR",
+            "color": "dark_purple",
+            "bold": true
+          },
+          "]"
+        ]
+      },
+      "width": 100,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "battle:classes/venator"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "PRAETORIAN",
+            "color": "#FF6600",
+            "bold": true
+          },
+          "]"
+        ]
+      },
+      "width": 100,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "battle:classes/praetorian"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "LEGIONNAIRE",
+            "color": "gold",
+            "bold": true
+          },
+          "]"
+        ]
+      },
+      "width": 100,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "battle:classes/legionnaire"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "CONJURER",
+            "color": "dark_green",
+            "bold": true
+          },
+          "]"
+        ]
+      },
+      "width": 100,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "battle:classes/conjurer"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "SEACHARGER",
+            "color": "#45fe98",
+            "bold": true
+          },
+          "]"
+        ]
+      },
+      "width": 100,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "battle:classes/seacharger"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "TRAPSHOOTER",
+            "color": "yellow",
+            "bold": true
+          },
+          "]"
+        ]
+      },
+      "width": 100,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "battle:classes/trapshooter"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "CAVALIER",
+            "color": "#FFD943",
+            "bold": true
+          },
+          "]"
+        ]
+      },
+      "width": 100,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "battle:classes/cavalier"
+      }
+    }
+  ]
+}

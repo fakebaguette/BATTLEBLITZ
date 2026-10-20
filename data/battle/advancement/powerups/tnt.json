@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "tnt",
+          "components": {
+            "minecraft:custom_data": {
+              "toxinTNT":true,
+              "NoDrop":true,
+              "PowerUp":true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "battle:powerups/tnt/place/1-click"
+  }
+}

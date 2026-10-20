@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "pufferfish",
+          "components": {
+            "minecraft:custom_data": {
+              "Pufferfish":true,
+              "NoDrop":true,
+              "PowerUp":true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "battle:powerups/puffer/item/use"
+  }
+}

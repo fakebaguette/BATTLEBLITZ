@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "tick": {
+      "trigger": "tick"
+    }
+  },
+  "rewards": {
+    "function": "battle:classes/lightwielder/rune/reset_click"
+  }
+}

@@ -1,0 +1,2 @@
+tellraw @s ["\n[",{"text":"INFO","bold":true,"color":"#ff9500"},{"text":"]","color":"white"},{"text":" ","color":"gold"},"| Game settings are ",{"text":"locked","color":"red"},"."]
+playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 1.3

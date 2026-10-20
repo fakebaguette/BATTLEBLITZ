@@ -1,0 +1,21 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "saddle",
+            "components": {
+            "minecraft:custom_data": {
+              "mountHorse":true,
+              "NoDrop":true
+            }
+          }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "battle:classes/praetorian/mount/mount"
+    }
+  }

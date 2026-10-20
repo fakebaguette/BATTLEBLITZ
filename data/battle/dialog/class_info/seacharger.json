@@ -1,0 +1,163 @@
+{
+  "type": "multi_action",
+  "title": {
+    "text": "Class Info - ",
+    "type": "text",
+    "extra": [
+      {
+        "text": "Seacharger",
+        "color": "#45fe98"
+      }
+    ],
+    "bold": true
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "",
+        "extra": [
+          "The Seacharger is a durable rush ",
+          {
+            "text": "utility",
+            "color": "light_purple"
+          },
+          " class. \n\nThey can deal damage up close, defend against enemies, and have different tools to debuff and immobilize enemies."
+        ]
+      },
+      "width": 250
+    },
+    {
+      "type": "plain_message",
+      "contents": {
+        "text": "Stats:\n",
+        "extra": [
+          {
+            "text": "Offense",
+            "extra": [
+              {
+                "text": " - ",
+                "color": "white"
+              },
+              {
+                "text": "|||||",
+                "color": "green",
+                "bold": true
+              },
+              {
+                "text": "||\n",
+                "color": "gray",
+                "bold": true
+              }
+            ],
+            "color": "red",
+            "hover_event": {
+              "action": "show_text",
+              "value": {
+                "text": "Offense is determined by the class' damage output and ability to stay in combat."
+              }
+            }
+          },
+          {
+            "text": "Durability",
+            "extra": [
+              {
+                "text": " - ",
+                "color": "white"
+              },
+              {
+                "text": "||||||",
+                "color": "dark_green",
+                "bold": true
+              },
+              {
+                "text": "|\n",
+                "color": "gray",
+                "bold": true
+              }
+            ],
+            "color": "dark_aqua",
+            "hover_event": {
+              "action": "show_text",
+              "value": {
+                "text": "Durability is determined by the class' armor values, healing, shielding, absorption, and resistances."
+              }
+            }
+          },
+          {
+            "text": "Utility",
+            "extra": [
+              {
+                "text": " - ",
+                "color": "white"
+              },
+              {
+                "text": "||||||",
+                "color": "dark_green",
+                "bold": true
+              },
+              {
+                "text": "|\n",
+                "color": "gray",
+                "bold": true
+              }
+            ],
+            "color": "light_purple",
+            "hover_event": {
+              "action": "show_text",
+              "value": {
+                "text": "Utility is determined by the class' ability to buff allies, immobilize or debuff enemies, destroy concrete, or collect power-ups."
+              }
+            }
+          },
+          {
+            "text": "Complexity",
+            "extra": [
+              {
+                "text": " - ",
+                "color": "white"
+              },
+              {
+                "text": "||||||",
+                "color": "dark_green",
+                "bold": true
+              },
+              {
+                "text": "|\n",
+                "color": "gray",
+                "bold": true
+              }
+            ],
+            "color": "gold",
+            "hover_event": {
+              "action": "show_text",
+              "value": {
+                "text": "Complexity is determined by the features available in the class and the difficulty of the playing the class."
+              }
+            }
+          }
+        ]
+      },
+      "width": 250
+    }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "columns": 3,
+  "actions": [
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "BACK",
+            "color": "white",
+            "bold": true
+          },
+          "]"
+        ]
+      }
+    }
+  ]
+}

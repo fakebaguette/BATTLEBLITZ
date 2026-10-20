@@ -1,0 +1,13 @@
+execute if entity @a[tag=PufferfishPowUp] as @e[type=item_display,nbt={item:{id:"minecraft:pufferfish",components:{"minecraft:custom_data":{PowerUp:1b,Pufferfish:1b}}}},limit=1,sort=nearest] at @s run particle minecraft:bubble_pop ~ ~ ~ 0.15 0.15 0.15 0.1 200 normal @a
+execute if entity @a[tag=PufferfishPowUp] as @e[type=item_display,nbt={item:{id:"minecraft:pufferfish",components:{"minecraft:custom_data":{PowerUp:1b,Pufferfish:1b}}}},limit=1,sort=nearest] at @s run particle minecraft:fishing ~ ~ ~ 1 1 1 0.2 100 normal @a
+
+execute as @a[tag=PufferfishPowUp] run function battle:ingame/playerdeath/cosmetics/award/checkpower
+
+execute as @a[tag=PufferfishPowUp] run playsound minecraft:block.amethyst_block.resonate block @s ~ ~ ~ 100
+execute as @a[tag=PufferfishPowUp] run playsound minecraft:block.note_block.bell block @s ~ ~ ~ 100 1.2
+execute as @a[tag=PufferfishPowUp] run playsound minecraft:block.note_block.chime block @s ~ ~ ~ 100 1.2
+execute as @a[tag=PufferfishPowUp] run give @s pufferfish[custom_name={"bold":true,"color":"gold","italic":false,"text":"Puffer Bomb"},lore=[[{"bold":false,"color":"white","italic":false,"text":"Use: Launch a "},{"bold":false,"color":"white","italic":false,"text":"pufferfish "},{"bold":false,"color":"white","italic":false,"text":"forward, dealing"}],[{"bold":true,"color":"red","italic":false,"text":"damaging "},{"bold":false,"color":"white","italic":false,"text":"and "},{"bold":true,"color":"dark_green","italic":false,"text":"poisoning "},{"bold":false,"color":"white","italic":false,"text":"nearby players."}]],custom_data={PowerUp:1b,Pufferfish:1b,NoDrop:1b},enchantments={"minecraft:infinity":1},consumable={consume_seconds:1000000,animation:"block"},food={nutrition:0,saturation:0,can_always_eat:true},tooltip_display={hide_tooltip:false,hidden_components:["enchantments","unbreakable","attribute_modifiers","dyed_color","potion_contents","provides_trim_material","potion_duration_scale","enchantment_glint_override","can_break","can_place_on","banner_patterns","provides_banner_patterns"]}] 1
+execute as @a[tag=PufferfishPowUp] run tellraw @s ["\n[",{"text":"INFO","bold":true,"color":"#ff9500"},{"text":"]","color":"white"},{"text":" ","color":"gold"},"| ",{"text":"You just collected a Power Up and got:\n- ","color":"#F9CD71"},{"text":"1 Puffer Bomb","bold":true,"color":"gold"}]
+execute as @a[tag=PufferfishPowUp] at @s run kill @e[type=item_display,nbt={item:{id:"minecraft:pufferfish",components:{"minecraft:custom_data":{PowerUp:1b,Pufferfish:1b}}}},distance=..2,limit=1,sort=nearest]
+execute as @a[tag=PufferfishPowUp] at @s run kill @e[type=text_display,tag=Pufferfish,tag=PowerUp,distance=..4,limit=1,sort=nearest]
+execute as @a[tag=PufferfishPowUp] run tag @s remove PufferfishPowUp

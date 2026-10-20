@@ -1,0 +1,86 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:shield",
+      "components": {
+        "minecraft:enchantment_glint_override": true,
+        "tooltip_display": {"hide_tooltip":true},
+        "minecraft:base_color": "white",
+        "minecraft:banner_patterns": [
+          {
+            "pattern": "minecraft:stripe_right",
+            "color": "light_blue"
+          },
+          {
+            "pattern": "minecraft:stripe_top",
+            "color": "white"
+          },
+          {
+            "pattern": "minecraft:curly_border",
+            "color": "white"
+          },
+          {
+            "pattern": "minecraft:mojang",
+            "color": "white"
+          },
+          {
+            "pattern": "minecraft:half_horizontal_bottom",
+            "color": "white"
+          },
+          {
+            "pattern": "minecraft:rhombus",
+            "color": "black"
+          },
+          {
+            "pattern": "minecraft:stripe_center",
+            "color": "light_blue"
+          },
+          {
+            "pattern": "minecraft:straight_cross",
+            "color": "gray"
+          },
+          {
+            "pattern": "minecraft:circle",
+            "color": "white"
+          },
+          {
+            "pattern": "minecraft:circle",
+            "color": "white"
+          },
+          {
+            "pattern": "minecraft:circle",
+            "color": "gray"
+          }
+        ]
+      }
+    },
+    "title": {
+      "text": "Northman Challenge",
+      "color": "blue",
+      "bold": true,
+      "italic": false
+    },
+    "description": {
+      "text": "\nWin 3 games on Northman!\n",
+      "color": "gray",
+      "bold": false,
+      "italic": false
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "battle:cosmetics/northman/1",
+  "criteria": {
+    "1": {
+      "trigger": "minecraft:impossible"
+    },
+    "2": {
+      "trigger": "minecraft:impossible"
+    },
+    "3": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

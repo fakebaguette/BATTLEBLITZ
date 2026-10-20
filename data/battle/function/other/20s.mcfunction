@@ -1,0 +1,3 @@
+schedule function battle:other/20s 20s
+
+tellraw @a[tag=lobbySpectate] ["\n[",{"text":"INFO","bold":true,"color":"#ff9500"},{"text":"]","color":"white"},{"text":" ","color":"gold"},"| ",{"text":"Done spectating?","click_event":{"action":"run_command","command":"/trigger triggerSpectate"},"color":"red"},{"text":" Click here to return.","click_event":{"action":"run_command","command":"/trigger triggerSpectate"}}]

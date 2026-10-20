@@ -1,0 +1,6 @@
+$execute if entity @s[scores={$(clicked_class)Reward=1..}] run item replace entity @s hotbar.6 with trial_key[custom_name=[{"bold":true,"color":"$(clicked_class_color)","italic":false,"text":"$(clicked_class_display)"},{"bold":false,"color":"white","italic":false,"text":" Crate Key"}],lore=[[{"bold":false,"color":"white","italic":false,"text":"Use: Unbox a random cosmetic for this crate type!"}]," ",{"bold":false,"color":"gray","italic":false,"text":"You can only open one at a time."}],custom_data={NoDrop:1b,cosmeticBox:1b,$(clicked_class)Box:1b},enchantment_glint_override=true,tooltip_display={hide_tooltip:false,hidden_components:["enchantments","unbreakable","attribute_modifiers","dyed_color","potion_contents","provides_trim_material","potion_duration_scale","enchantment_glint_override","can_break","can_place_on","banner_patterns","provides_banner_patterns"]},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:1000000,animation:"none"}] $(number_of_keys)
+
+execute at @s run playsound minecraft:block.trial_spawner.eject_item master @s ~ ~ ~ 10 1.55
+function battle:lobby/cosmetics/open_dialog/disable_obj
+function battle:lobby/cosmetics/open_dialog/init_obj
+trigger cosmetics_open_crates

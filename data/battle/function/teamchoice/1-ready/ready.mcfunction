@@ -1,0 +1,8 @@
+execute unless entity @s[tag=Participant] run scoreboard players remove .ready vote_phase 1
+team leave @s[tag=!Participant]
+
+tellraw @a[tag=!Participant] [{"bold":true,"color":"yellow","selector":"@s"}," ",{"text":"is no longer ready.","color":"red","bold":false}]
+execute at @s[tag=!Participant] run playsound minecraft:block.note_block.xylophone master @s ~ ~ ~ 10 0
+
+item replace entity @s[tag=!Participant,nbt={SelectedItem:{id:"minecraft:enchanted_golden_apple",count:1,components:{"minecraft:custom_data":{NoDrop:1b,NoReadyUp:1b}}}}] weapon.mainhand with apple[custom_name=[{"bold":false,"color":"white","italic":false,"text":"["},{"bold":true,"color":"red","italic":false,"text":"NOT READY"},{"bold":false,"color":"white","italic":false,"text":"]"}],lore=[[{"bold":false,"color":"white","italic":false,"text":"R-Click: Click to "},{"bold":true,"color":"green","italic":false,"text":"ready up"},{"bold":false,"color":"white","italic":false,"text":"!"}]," ",{"bold":false,"color":"gray","italic":false,"text":"If 2 or more people have readied up, begin a"},{"bold":false,"color":"gray","italic":false,"text":"countdown to allow for more to join, then"},{"bold":false,"color":"gray","italic":false,"text":"start selection and the game!"}],custom_data={NoDrop:1b,ReadyUp:1b},enchantments={"minecraft:infinity":1},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:1000000,animation:"none"}] 1
+advancement revoke @s[tag=!Participant] only battle:start/ready

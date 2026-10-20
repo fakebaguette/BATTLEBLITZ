@@ -1,0 +1,1 @@
+function battle:reset/reset

@@ -1,0 +1,1 @@
+$execute as @a[tag=Participant,tag=!diedTp,distance=$(fire_wall_size)..] at @s run function battle:ingame/map_specific/crypt/fire/damage/deal_damage

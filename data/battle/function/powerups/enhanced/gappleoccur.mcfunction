@@ -1,0 +1,12 @@
+execute if entity @a[tag=GapplePowUp] as @e[type=item_display,nbt={item:{id:"minecraft:golden_apple",components:{"minecraft:custom_data":{PowerUp:1b,Enhanced:1b}}}},limit=1,sort=nearest] at @s run particle minecraft:totem_of_undying ~ ~ ~ 0.15 0.15 0.15 0.3 200 normal @a
+
+execute as @a[tag=GapplePowUp] run function battle:ingame/playerdeath/cosmetics/award/checkpower
+
+execute as @a[tag=GapplePowUp] run playsound minecraft:block.amethyst_block.resonate block @s ~ ~ ~ 100
+execute as @a[tag=GapplePowUp] run playsound minecraft:block.note_block.bell block @s ~ ~ ~ 100 1.2
+execute as @a[tag=GapplePowUp] run playsound minecraft:block.note_block.chime block @s ~ ~ ~ 100 1.2
+execute as @a[tag=GapplePowUp] run give @s golden_apple[custom_name={"bold":true,"color":"gold","italic":false,"text":"Enhanced Golden Apple"},lore=[[{"bold":false,"color":"white","italic":false,"text":"Consume: Gain "},{"bold":true,"color":"yellow","italic":false,"text":"absorption,"},{"bold":true,"color":"light_purple","italic":false,"text":" regeneration,"},{"bold":false,"color":"white","italic":false,"text":" and"}],[{"bold":true,"color":"red","italic":false,"text":"strength"},{"bold":false,"color":"white","italic":false,"text":" momentarily."}]," ",{"bold":false,"color":"gray","italic":false,"text":"Takes 3 seconds to consume."}],custom_data={PowerUp:1b,Enhanced:1b},enchantments={"minecraft:infinity":1},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:2.5,animation:"eat"},tooltip_display={hide_tooltip:false,hidden_components:["enchantments","unbreakable","attribute_modifiers","dyed_color","potion_contents","provides_trim_material","potion_duration_scale","enchantment_glint_override","can_break","can_place_on","banner_patterns","provides_banner_patterns"]}] 1
+execute as @a[tag=GapplePowUp] run tellraw @s ["\n[",{"text":"INFO","bold":true,"color":"#ff9500"},{"text":"]","color":"white"},{"text":" ","color":"gold"},"| ",{"text":"You just collected a Power Up and got:\n- ","color":"#F9CD71"},{"text":"1 Enhanced Golden Apple","bold":true,"color":"gold"}]
+execute as @a[tag=GapplePowUp] at @s run kill @e[type=item_display,nbt={item:{id:"minecraft:golden_apple",components:{"minecraft:custom_data":{PowerUp:1b,Enhanced:1b}}}},distance=..2,limit=1,sort=nearest]
+execute as @a[tag=GapplePowUp] at @s run kill @e[type=text_display,tag=Gapple,tag=PowerUp,distance=..4,limit=1,sort=nearest]
+execute as @a[tag=GapplePowUp] run tag @s remove GapplePowUp

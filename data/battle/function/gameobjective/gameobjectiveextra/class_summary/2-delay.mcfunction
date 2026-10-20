@@ -1,0 +1,1 @@
+execute as @a[tag=Participant] run function battle:gameobjective/gameobjectiveextra/class_summary/3-display with storage class_summary

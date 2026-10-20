@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "skull_pottery_sherd",
+          "components": {
+            "minecraft:custom_data": {
+              "PharCurse":true,
+              "NoDrop":true,
+              "PowerUp":true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "battle:powerups/curse/item/use"
+  }
+}

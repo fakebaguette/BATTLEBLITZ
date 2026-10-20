@@ -1,0 +1,1 @@
+execute as @s at @s anchored eyes positioned ^ ^ ^ anchored feet run function battle:classes/prospector/supply/item/ray/2-init

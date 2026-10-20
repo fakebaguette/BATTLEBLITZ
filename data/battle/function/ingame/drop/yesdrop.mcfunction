@@ -1,0 +1,1 @@
+schedule clear battle:ingame/drop/nodrop 

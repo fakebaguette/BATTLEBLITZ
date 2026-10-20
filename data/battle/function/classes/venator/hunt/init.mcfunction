@@ -1,0 +1,1 @@
+execute as @a[tag=venator_class,tag=!diedTp] at @s run function battle:classes/venator/hunt/hunt

@@ -1,0 +1,10 @@
+advancement revoke @s only battle:start/ready
+advancement revoke @s only battle:start/notready
+advancement revoke @s only battle:launch/thing
+advancement revoke @s only battle:quit/quit
+advancement revoke @s only battle:spectate/eye
+advancement revoke @a only battle:box/box
+advancement revoke @s only battle:powerups/shroom
+advancement revoke @s only battle:powerups/puffer
+advancement revoke @s only battle:powerups/curse
+advancement revoke @s only battle:dialog/open_class

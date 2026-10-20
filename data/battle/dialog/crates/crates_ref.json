@@ -1,0 +1,305 @@
+{
+  "type": "multi_action",
+  "title": {
+    "text": "Crates Menu",
+    "type": "text",
+    "color": "#ff8624",
+    "bold": true
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Advancements in the \"Game Quests\" and \"Lobby Quests\" will give you ",
+        "extra": [
+          {
+            "text": "Regular Keys",
+            "color": "white",
+            "bold": true
+          },
+          ".\n\nAdvancements in the \"Mastery Quests\" will give you unique ",
+          {
+            "text": "class-based",
+            "color": "gold",
+            "bold": true
+          },
+          {
+            "text": " keys!",
+            "color": "white"
+          }
+        ]
+      },
+      "width": 250
+    }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "exit_action": {
+    "label": {
+      "text": "[",
+      "extra": [
+        {
+          "text": "BACK",
+          "bold": true
+        },
+        "]"
+      ]
+    },
+    "action": {
+        "type": "show_dialog",
+        "dialog": "battle:crates/main_menu"
+      },
+    "width": 110
+  },
+  "columns": 3,
+  "actions": [
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "MAGUS",
+            "color": "light_purple",
+            "bold": true,
+            "strikethrough": false
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger give_magus_key"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "MARAUDER",
+            "color": "dark_red",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger give_marauder_key"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "NORTHMAN",
+            "color": "blue",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger give_northman_key"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "REVENANT",
+            "color": "red",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger give_revenant_key"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "LIGHTWIELDER",
+            "color": "#fdfcee",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger give_lightwielder_key"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "PROSPECTOR",
+            "color": "#DFFFB0",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger give_prospector_key"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "VENATOR",
+            "color": "dark_purple",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger give_venator_key"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "PRAETORIAN",
+            "color": "#FF6600",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger give_praetorian_key"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "LEGIONNAIRE",
+            "color": "gold",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger give_legionnaire_key"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "CONJURER",
+            "color": "dark_green",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger give_conjurer_key"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "SEACHARGER",
+            "color": "#45fe98",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger give_seacharger_key"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "TRAPSHOOTER",
+            "color": "yellow",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger give_trapshooter_key"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "CAVALIER",
+            "color": "#FFD943",
+            "bold": true
+          },
+          "] ()"
+        ]
+      },
+      "width": 110,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger give_cavalier_key"
+      }
+    }
+  ]
+}

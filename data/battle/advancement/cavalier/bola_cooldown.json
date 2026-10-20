@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "tick": {
+      "trigger": "tick"
+    }
+  },
+  "rewards": {
+    "function": "battle:classes/cavalier/bola/reset_click"
+  }
+}

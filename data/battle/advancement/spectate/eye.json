@@ -1,0 +1,17 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "ender_eye",
+            "components": {
+              }
+            }
+          }
+        }
+      },
+    "rewards": {
+      "function": "battle:lobby/spectate/check"
+    }
+  }

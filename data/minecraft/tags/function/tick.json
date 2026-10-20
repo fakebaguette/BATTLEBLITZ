@@ -1,0 +1,7 @@
+{
+	"replace": false,
+	"values": [
+		"battle:tick",
+		"ladder:tick"
+	]
+}

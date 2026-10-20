@@ -1,0 +1,1 @@
+schedule clear battle:classes/marauder/main

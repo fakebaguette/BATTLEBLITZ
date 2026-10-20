@@ -1,0 +1,47 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:stone_sword",
+      "components": {
+        "minecraft:enchantment_glint_override": true,
+        "tooltip_display": {
+          "hide_tooltip": true
+        }
+      }
+    },
+    "title": {
+      "text": "Conjurer Quest",
+      "color": "dark_green",
+      "bold": true,
+      "italic": false
+    },
+    "description": {
+      "text": "\nKill 5 enemies on Conjurer!\n",
+      "color": "gray",
+      "bold": false,
+      "italic": false
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "battle:cosmetics/extra/training",
+  "criteria": {
+    "1": {
+      "trigger": "minecraft:impossible"
+    },
+    "2": {
+      "trigger": "minecraft:impossible"
+    },
+    "3": {
+      "trigger": "minecraft:impossible"
+    },
+    "4": {
+      "trigger": "minecraft:impossible"
+    },
+    "5": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

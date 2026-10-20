@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "paper",
+          "components": {
+            "minecraft:custom_data": {
+              "supply_drop":true,
+              "NoDrop":true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "battle:classes/prospector/supply/item/place/1-click"
+  }
+}

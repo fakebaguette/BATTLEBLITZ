@@ -1,0 +1,36 @@
+scoreboard objectives add cosmeticReward dummy
+execute store result score @s cosmeticReward run random value 1..1000
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=legionBox] if entity @s[tag=legionKillMessage,tag=legionKillSound,tag=legionKillEffect] if score @s cosmeticReward matches 1..1000 run tellraw @s ["\n[",{"text":"INFO","bold":true,"color":"#ff9500"},{"text":"]","color":"white"},{"text":" ","color":"gold"},"| ",{"text":"You already have all of the ","color":"white"},{"text":"Legionnaire's","color":"gold","bold":true},{"text":" cosmetics!","color":"white"}]
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=legionBox] if entity @s[tag=legionKillMessage,tag=legionKillSound,tag=legionKillEffect] if score @s cosmeticReward matches 1..1000 run return fail
+
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=legionBox] if entity @s[tag=legionKillMessage] if score @s cosmeticReward matches 1..333 run return run function battle:lobby/cosmetics/crates/open_crate/rewards/legion
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=legionBox] if entity @s[tag=legionKillSound] if score @s cosmeticReward matches 334..666 run return run function battle:lobby/cosmetics/crates/open_crate/rewards/legion
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=legionBox] if entity @s[tag=legionKillEffect] if score @s cosmeticReward matches 667..1000 run return run function battle:lobby/cosmetics/crates/open_crate/rewards/legion
+
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=legionBox] if score @s cosmeticReward matches 1..333 run tellraw @a ["\n[",{"text":"INFO","bold":true,"color":"#ff9500"},{"text":"]","color":"white"},{"text":" ","color":"gold"},"| ",{"selector":"@s"},{"text":" unboxed the ","color":"white"},{"text":"Legionnaire's","bold":true,"color":"gold"},{"text":" ","bold":true,"color":"white"},{"text":"Kill Messages ","bold":true,"color":"white"},{"text":"out of their crate!","color":"white"}]
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=legionBox] if score @s cosmeticReward matches 334..666 run tellraw @a ["\n[",{"text":"INFO","bold":true,"color":"#ff9500"},{"text":"]","color":"white"},{"text":" ","color":"gold"},"| ",{"selector":"@s"},{"text":" unboxed the ","color":"white"},{"text":"Legionnaire's","bold":true,"color":"gold"},{"text":" ","bold":true,"color":"white"},{"text":"Kill Sound ","bold":true,"color":"yellow"},{"text":"out of their crate!","color":"white"}]
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=legionBox] if score @s cosmeticReward matches 667..1000 run tellraw @a ["\n[",{"text":"INFO","bold":true,"color":"#ff9500"},{"text":"]","color":"white"},{"text":" ","color":"gold"},"| ",{"selector":"@s"},{"text":" unboxed the ","color":"white"},{"text":"Legionnaire's","bold":true,"color":"gold"},{"text":" ","bold":true,"color":"white"},{"text":"Kill Effect ","bold":true,"color":"gold"},{"text":"out of their crate!","color":"white"}]
+
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=legionBox] if score @s cosmeticReward matches 1..333 run tag @s add legionKillMessage
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=legionBox] if score @s cosmeticReward matches 334..666 run tag @s add legionKillSound
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=legionBox] if score @s cosmeticReward matches 667..1000 run tag @s add legionKillEffect
+
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=legionBox] if score @s cosmeticReward matches 1..333 run tag @s add newlegionKillMessage
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=legionBox] if score @s cosmeticReward matches 334..666 run tag @s add newlegionKillSound
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=legionBox] if score @s cosmeticReward matches 667..1000 run tag @s add newlegionKillEffect
+
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=legionBox,tag=newlegionKillMessage] at @s at @e[type=interaction,tag=cosmeticLoot,sort=nearest,limit=1,scores={cosmeticBoxTime=80}] run summon item_display ~ ~ ~ {Tags:["cosmeticLootDisplay"],item:{id:"minecraft:vex_armor_trim_smithing_template",count:1,components:{"minecraft:enchantments":{"minecraft:unbreaking":1}}}}
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=legionBox,tag=newlegionKillMessage] at @s at @e[type=interaction,tag=cosmeticLoot,sort=nearest,limit=1,scores={cosmeticBoxTime=80}] run summon text_display ~ ~1.2 ~ {Tags:["cosmeticLootDisplayName"],default_background:1b,shadow:0b,see_through:0b,billboard:"center",text:[{"bold":true,"color":"gold","italic":false,"text":"Legionnaire's"},{"bold":true,"color":"white","italic":false,"text":" Kill Messages"}]}
+
+
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=legionBox,tag=newlegionKillSound] at @s at @e[type=interaction,tag=cosmeticLoot,sort=nearest,limit=1,scores={cosmeticBoxTime=80}] run summon item_display ~ ~ ~ {Tags:["cosmeticLootDisplay"],item:{id:"minecraft:bow",count:1,components:{"minecraft:enchantments":{"minecraft:unbreaking":1}}}}
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=legionBox,tag=newlegionKillSound] at @s at @e[type=interaction,tag=cosmeticLoot,sort=nearest,limit=1,scores={cosmeticBoxTime=80}] run summon text_display ~ ~1.2 ~ {Tags:["cosmeticLootDisplayName"],default_background:1b,shadow:0b,see_through:0b,billboard:"center",text:[{"bold":true,"color":"gold","italic":false,"text":"Legionnaire's"},{"bold":true,"color":"yellow","italic":false,"text":" Kill Sound"}]}
+
+
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=legionBox,tag=newlegionKillEffect] at @s at @e[type=interaction,tag=cosmeticLoot,sort=nearest,limit=1,scores={cosmeticBoxTime=80}] run summon item_display ~ ~-0.5 ~ {item_display:"ground",Rotation:[90F,0F],Tags:["cosmeticLootDisplay"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[3f,3f,3f]},item:{id:"minecraft:shield",count:1,components:{"minecraft:enchantments":{"minecraft:unbreaking":1},"minecraft:base_color":"light_gray","minecraft:banner_patterns":[{pattern:"minecraft:stripe_center",color:"yellow"},{pattern:"minecraft:flower",color:"white"},{pattern:"minecraft:stripe_middle",color:"yellow"},{pattern:"minecraft:straight_cross",color:"white"},{pattern:"minecraft:curly_border",color:"yellow"},{pattern:"minecraft:border",color:"white"}]}}}
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=legionBox,tag=newlegionKillEffect] at @s at @e[type=interaction,tag=cosmeticLoot,sort=nearest,limit=1,scores={cosmeticBoxTime=80}] run summon text_display ~ ~1.2 ~ {Tags:["cosmeticLootDisplayName"],default_background:1b,shadow:0b,see_through:0b,billboard:"center",text:[{"bold":true,"color":"gold","italic":false,"text":"Legionnaire's"},{"bold":true,"color":"gold","italic":false,"text":" Kill Effect"}]}
+
+
+tag @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=legionBox,tag=newlegionKillMessage] remove newlegionKillMessage
+tag @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=legionBox,tag=newlegionKillSound] remove newlegionKillSound
+tag @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=legionBox,tag=newlegionKillEffect] remove newlegionKillEffect

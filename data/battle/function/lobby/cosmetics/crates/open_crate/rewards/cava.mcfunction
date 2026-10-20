@@ -1,0 +1,36 @@
+scoreboard objectives add cosmeticReward dummy
+execute store result score @s cosmeticReward run random value 1..1000
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=cavaBox] if entity @s[tag=cavaKillMessage,tag=cavaKillSound,tag=cavaKillEffect] if score @s cosmeticReward matches 1..1000 run tellraw @s ["\n[",{"text":"INFO","bold":true,"color":"#ff9500"},{"text":"]","color":"white"},{"text":" ","color":"gold"},"| ",{"text":"You already have all of the ","color":"white"},{"text":"Cavalier's","color":"#FFD943","bold":true},{"text":" cosmetics!","color":"white"}]
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=cavaBox] if entity @s[tag=cavaKillMessage,tag=cavaKillSound,tag=cavaKillEffect] if score @s cosmeticReward matches 1..1000 run return fail
+
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=cavaBox] if entity @s[tag=cavaKillMessage] if score @s cosmeticReward matches 1..333 run return run function battle:lobby/cosmetics/crates/open_crate/rewards/cava
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=cavaBox] if entity @s[tag=cavaKillSound] if score @s cosmeticReward matches 334..666 run return run function battle:lobby/cosmetics/crates/open_crate/rewards/cava
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=cavaBox] if entity @s[tag=cavaKillEffect] if score @s cosmeticReward matches 667..1000 run return run function battle:lobby/cosmetics/crates/open_crate/rewards/cava
+
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=cavaBox] if score @s cosmeticReward matches 1..333 run tellraw @a ["\n[",{"text":"INFO","bold":true,"color":"#ff9500"},{"text":"]","color":"white"},{"text":" ","color":"gold"},"| ",{"selector":"@s"},{"text":" unboxed the ","color":"white"},{"text":"Cavalier's","bold":true,"color":"#FFD943"},{"text":" ","bold":true,"color":"white"},{"text":"Kill Messages ","bold":true,"color":"white"},{"text":"out of their crate!","color":"white"}]
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=cavaBox] if score @s cosmeticReward matches 334..666 run tellraw @a ["\n[",{"text":"INFO","bold":true,"color":"#ff9500"},{"text":"]","color":"white"},{"text":" ","color":"gold"},"| ",{"selector":"@s"},{"text":" unboxed the ","color":"white"},{"text":"Cavalier's","bold":true,"color":"#FFD943"},{"text":" ","bold":true,"color":"white"},{"text":"Kill Sound ","bold":true,"color":"yellow"},{"text":"out of their crate!","color":"white"}]
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=cavaBox] if score @s cosmeticReward matches 667..1000 run tellraw @a ["\n[",{"text":"INFO","bold":true,"color":"#ff9500"},{"text":"]","color":"white"},{"text":" ","color":"gold"},"| ",{"selector":"@s"},{"text":" unboxed the ","color":"white"},{"text":"Cavalier's","bold":true,"color":"#FFD943"},{"text":" ","bold":true,"color":"white"},{"text":"Kill Effect ","bold":true,"color":"gold"},{"text":"out of their crate!","color":"white"}]
+
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=cavaBox] if score @s cosmeticReward matches 1..333 run tag @s add cavaKillMessage
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=cavaBox] if score @s cosmeticReward matches 334..666 run tag @s add cavaKillSound
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=cavaBox] if score @s cosmeticReward matches 667..1000 run tag @s add cavaKillEffect
+
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=cavaBox] if score @s cosmeticReward matches 1..333 run tag @s add newcavaKillMessage
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=cavaBox] if score @s cosmeticReward matches 334..666 run tag @s add newcavaKillSound
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=cavaBox] if score @s cosmeticReward matches 667..1000 run tag @s add newcavaKillEffect
+
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=cavaBox,tag=newcavaKillMessage] at @s at @e[type=interaction,tag=cosmeticLoot,sort=nearest,limit=1,scores={cosmeticBoxTime=80}] run summon item_display ~ ~ ~ {Tags:["cosmeticLootDisplay"],item:{id:"minecraft:iron_spear",count:1,components:{"minecraft:enchantments":{"minecraft:unbreaking":1}}}}
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=cavaBox,tag=newcavaKillMessage] at @s at @e[type=interaction,tag=cosmeticLoot,sort=nearest,limit=1,scores={cosmeticBoxTime=80}] run summon text_display ~ ~1.2 ~ {Tags:["cosmeticLootDisplayName"],default_background:1b,shadow:0b,see_through:0b,billboard:"center",text:[{"bold":true,"color":"#FFD943","italic":false,"text":"Cavalier's"},{"bold":true,"color":"white","italic":false,"text":" Kill Messages"}]}
+
+
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=cavaBox,tag=newcavaKillSound] at @s at @e[type=interaction,tag=cosmeticLoot,sort=nearest,limit=1,scores={cosmeticBoxTime=80}] run summon item_display ~ ~ ~ {Tags:["cosmeticLootDisplay"],item:{id:"minecraft:lead",count:1,components:{"minecraft:enchantments":{"minecraft:unbreaking":1}}}}
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=cavaBox,tag=newcavaKillSound] at @s at @e[type=interaction,tag=cosmeticLoot,sort=nearest,limit=1,scores={cosmeticBoxTime=80}] run summon text_display ~ ~1.2 ~ {Tags:["cosmeticLootDisplayName"],default_background:1b,shadow:0b,see_through:0b,billboard:"center",text:[{"bold":true,"color":"#FFD943","italic":false,"text":"Cavalier's"},{"bold":true,"color":"yellow","italic":false,"text":" Kill Sound"}]}
+
+
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=cavaBox,tag=newcavaKillEffect] at @s at @e[type=interaction,tag=cosmeticLoot,sort=nearest,limit=1,scores={cosmeticBoxTime=80}] run summon item_display ~ ~ ~ {item_display:"ground",Tags:["cosmeticLootDisplay"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[3f,3f,3f]},item:{id:"minecraft:red_banner",count:1,components:{"minecraft:enchantments":{"minecraft:unbreaking":1},"minecraft:banner_patterns":[{pattern:"minecraft:curly_border",color:"orange"},{pattern:"minecraft:triangles_top",color:"orange"},{pattern:"minecraft:triangles_bottom",color:"orange"},{pattern:"minecraft:stripe_downleft",color:"orange"},{pattern:"minecraft:stripe_downright",color:"orange"},{pattern:"minecraft:straight_cross",color:"red"}]}}}
+execute as @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=cavaBox,tag=newcavaKillEffect] at @s at @e[type=interaction,tag=cosmeticLoot,sort=nearest,limit=1,scores={cosmeticBoxTime=80}] run summon text_display ~ ~1.2 ~ {Tags:["cosmeticLootDisplayName"],default_background:1b,shadow:0b,see_through:0b,billboard:"center",text:[{"bold":true,"color":"#FFD943","italic":false,"text":"Cavalier's"},{"bold":true,"color":"gold","italic":false,"text":" Kill Effect"}]}
+
+
+tag @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=cavaBox,tag=newcavaKillMessage] remove newcavaKillMessage
+tag @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=cavaBox,tag=newcavaKillSound] remove newcavaKillSound
+tag @a[tag=rewardBox,scores={cosmeticBoxTime=80},tag=cavaBox,tag=newcavaKillEffect] remove newcavaKillEffect

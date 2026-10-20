@@ -1,0 +1,23 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": ["minecraft:brown_dye"],
+            "components": {
+              "custom_data": 
+              {
+                "mara_bola": 1,
+                "NoDrop": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "battle:classes/marauder/bola/on_click"
+    }
+  }
+  

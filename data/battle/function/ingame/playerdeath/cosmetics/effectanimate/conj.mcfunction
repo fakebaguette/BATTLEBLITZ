@@ -1,0 +1,110 @@
+execute if entity @e[type=interaction,tag=effectConjAnimation] run schedule function battle:ingame/playerdeath/cosmetics/effectanimate/conj 1t
+
+scoreboard players add @s effectAnimate 0
+scoreboard players add @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=0..}] effectAnimate 1
+
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=20}] at @s run particle cloud ~ ~6 ~ 1 1 1 0 20 normal
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=20}] at @s run particle cherry_leaves ~ ~4 ~ 2 2 2 0.1 100 normal
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=21}] at @s run kill @s
+
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=1}] at @s run particle cherry_leaves ^0.000 ^0.000 ^1.000 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=1}] at @s run particle cherry_leaves ^0.199 ^0.067 ^0.980 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=1}] at @s run particle cherry_leaves ^0.389 ^0.133 ^0.921 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=1}] at @s run particle cherry_leaves ^0.565 ^0.200 ^0.825 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=1}] at @s run particle cherry_leaves ^0.717 ^0.267 ^0.697 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=2}] at @s run particle cherry_leaves ^0.841 ^0.333 ^0.540 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=2}] at @s run particle cherry_leaves ^0.932 ^0.400 ^0.362 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=2}] at @s run particle cherry_leaves ^0.985 ^0.467 ^0.170 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=2}] at @s run particle cherry_leaves ^1.000 ^0.533 ^-0.029 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=2}] at @s run particle cherry_leaves ^0.974 ^0.600 ^-0.227 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=3}] at @s run particle cherry_leaves ^0.909 ^0.667 ^-0.416 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=3}] at @s run particle cherry_leaves ^0.808 ^0.733 ^-0.589 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=3}] at @s run particle cherry_leaves ^0.675 ^0.800 ^-0.737 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=3}] at @s run particle cherry_leaves ^0.516 ^0.867 ^-0.857 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=3}] at @s run particle cherry_leaves ^0.335 ^0.933 ^-0.942 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=4}] at @s run particle cherry_leaves ^0.141 ^1.000 ^-0.990 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=4}] at @s run particle cherry_leaves ^-0.058 ^1.067 ^-0.998 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=4}] at @s run particle cherry_leaves ^-0.256 ^1.133 ^-0.967 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=4}] at @s run particle cherry_leaves ^-0.443 ^1.200 ^-0.897 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=4}] at @s run particle cherry_leaves ^-0.612 ^1.267 ^-0.791 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=5}] at @s run particle cherry_leaves ^-0.757 ^1.333 ^-0.654 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=5}] at @s run particle cherry_leaves ^-0.872 ^1.400 ^-0.490 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=5}] at @s run particle cherry_leaves ^-0.952 ^1.467 ^-0.307 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=5}] at @s run particle cherry_leaves ^-0.994 ^1.533 ^-0.112 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=5}] at @s run particle cherry_leaves ^-0.996 ^1.600 ^0.087 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=6}] at @s run particle cherry_leaves ^-0.959 ^1.667 ^0.284 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=6}] at @s run particle cherry_leaves ^-0.883 ^1.733 ^0.469 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=6}] at @s run particle cherry_leaves ^-0.773 ^1.800 ^0.635 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=6}] at @s run particle cherry_leaves ^-0.631 ^1.867 ^0.776 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=6}] at @s run particle cherry_leaves ^-0.465 ^1.933 ^0.886 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=7}] at @s run particle cherry_leaves ^-0.279 ^2.000 ^0.960 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=7}] at @s run particle cherry_leaves ^-0.083 ^2.067 ^0.997 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=7}] at @s run particle cherry_leaves ^0.117 ^2.133 ^0.993 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=7}] at @s run particle cherry_leaves ^0.312 ^2.200 ^0.950 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=7}] at @s run particle cherry_leaves ^0.494 ^2.267 ^0.869 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=8}] at @s run particle cherry_leaves ^0.657 ^2.333 ^0.754 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=8}] at @s run particle cherry_leaves ^0.794 ^2.400 ^0.608 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=8}] at @s run particle cherry_leaves ^0.899 ^2.467 ^0.439 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=8}] at @s run particle cherry_leaves ^0.968 ^2.533 ^0.251 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=8}] at @s run particle cherry_leaves ^0.999 ^2.600 ^0.054 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=9}] at @s run particle cherry_leaves ^0.989 ^2.667 ^-0.146 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=9}] at @s run particle cherry_leaves ^0.941 ^2.733 ^-0.339 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=9}] at @s run particle cherry_leaves ^0.855 ^2.800 ^-0.519 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=9}] at @s run particle cherry_leaves ^0.734 ^2.867 ^-0.679 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=9}] at @s run particle cherry_leaves ^0.585 ^2.933 ^-0.811 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=10}] at @s run particle cherry_leaves ^0.412 ^3.000 ^-0.911 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=10}] at @s run particle cherry_leaves ^0.223 ^3.067 ^-0.975 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=10}] at @s run particle cherry_leaves ^0.025 ^3.133 ^-1.000 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=10}] at @s run particle cherry_leaves ^-0.174 ^3.200 ^-0.985 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=10}] at @s run particle cherry_leaves ^-0.366 ^3.267 ^-0.930 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=11}] at @s run particle cherry_leaves ^-0.544 ^3.333 ^-0.839 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=11}] at @s run particle cherry_leaves ^-0.700 ^3.400 ^-0.714 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=11}] at @s run particle cherry_leaves ^-0.828 ^3.467 ^-0.561 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=11}] at @s run particle cherry_leaves ^-0.923 ^3.533 ^-0.385 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=11}] at @s run particle cherry_leaves ^-0.981 ^3.600 ^-0.194 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=12}] at @s run particle cherry_leaves ^-1.000 ^3.667 ^0.004 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=12}] at @s run particle cherry_leaves ^-0.979 ^3.733 ^0.203 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=12}] at @s run particle cherry_leaves ^-0.919 ^3.800 ^0.393 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=12}] at @s run particle cherry_leaves ^-0.823 ^3.867 ^0.568 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=12}] at @s run particle cherry_leaves ^-0.694 ^3.933 ^0.720 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=13}] at @s run particle cherry_leaves ^-0.537 ^4.000 ^0.844 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=13}] at @s run particle cherry_leaves ^-0.358 ^4.067 ^0.934 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=13}] at @s run particle cherry_leaves ^-0.166 ^4.133 ^0.986 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=13}] at @s run particle cherry_leaves ^0.034 ^4.200 ^0.999 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=13}] at @s run particle cherry_leaves ^0.232 ^4.267 ^0.973 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=14}] at @s run particle cherry_leaves ^0.420 ^4.333 ^0.907 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=14}] at @s run particle cherry_leaves ^0.592 ^4.400 ^0.806 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=14}] at @s run particle cherry_leaves ^0.740 ^4.467 ^0.672 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=14}] at @s run particle cherry_leaves ^0.859 ^4.533 ^0.512 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=15}] at @s run particle cherry_leaves ^0.944 ^4.600 ^0.331 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=15}] at @s run particle cherry_leaves ^0.991 ^4.667 ^0.137 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=15}] at @s run particle cherry_leaves ^0.998 ^4.733 ^-0.063 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=15}] at @s run particle cherry_leaves ^0.966 ^4.800 ^-0.260 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=15}] at @s run particle cherry_leaves ^0.895 ^4.867 ^-0.446 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=16}] at @s run particle cherry_leaves ^0.788 ^4.933 ^-0.620 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=16}] at @s run particle cherry_leaves ^0.650 ^5.000 ^-0.760 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=16}] at @s run particle cherry_leaves ^0.486 ^5.067 ^-0.874 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=16}] at @s run particle cherry_leaves ^0.303 ^5.133 ^-0.953 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=16}] at @s run particle cherry_leaves ^0.108 ^5.200 ^-0.994 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=17}] at @s run particle cherry_leaves ^-0.092 ^5.267 ^-0.996 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=17}] at @s run particle cherry_leaves ^-0.288 ^5.333 ^-0.958 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=17}] at @s run particle cherry_leaves ^-0.472 ^5.400 ^-0.881 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=17}] at @s run particle cherry_leaves ^-0.638 ^5.467 ^-0.770 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=17}] at @s run particle cherry_leaves ^-0.778 ^5.533 ^-0.628 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=18}] at @s run particle cherry_leaves ^-0.888 ^5.600 ^-0.461 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=18}] at @s run particle cherry_leaves ^-0.961 ^5.667 ^-0.275 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=18}] at @s run particle cherry_leaves ^-0.997 ^5.733 ^-0.079 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=18}] at @s run particle cherry_leaves ^-0.993 ^5.800 ^0.121 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=18}] at @s run particle cherry_leaves ^-0.949 ^5.867 ^0.316 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=19}] at @s run particle cherry_leaves ^-0.867 ^5.933 ^0.498 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=19}] at @s run particle cherry_leaves ^-0.751 ^6.000 ^0.660 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=19}] at @s run particle cherry_leaves ^-0.605 ^6.067 ^0.796 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=19}] at @s run particle cherry_leaves ^-0.435 ^6.133 ^0.901 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=19}] at @s run particle cherry_leaves ^-0.247 ^6.200 ^0.969 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=19}] at @s run particle cherry_leaves ^-0.050 ^6.267 ^0.999 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=20}] at @s run particle cherry_leaves ^0.200 ^6.333 ^0.989 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=20}] at @s run particle cherry_leaves ^0.343 ^6.400 ^0.939 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=20}] at @s run particle cherry_leaves ^0.523 ^6.467 ^0.852 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=20}] at @s run particle cherry_leaves ^0.682 ^6.533 ^0.731 0 0 0 0 1 normal @a
+execute as @e[type=interaction,tag=effectConjAnimation,scores={effectAnimate=20}] at @s run particle cherry_leaves ^0.814 ^6.600 ^0.581 0 0 0 0 1 normal @a
+

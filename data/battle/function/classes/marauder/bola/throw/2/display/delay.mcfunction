@@ -1,0 +1,1 @@
+execute as @a[tag=mara_bola_hit] at @s summon snowball run function battle:classes/marauder/bola/throw/2/display/pull

@@ -1,0 +1,66 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:shield",
+      "components": {
+        "minecraft:enchantment_glint_override": true,
+        "tooltip_display": {"hide_tooltip":true},
+        "minecraft:base_color": "light_gray",
+        "minecraft:banner_patterns": [
+          {
+            "pattern": "minecraft:stripe_center",
+            "color": "yellow"
+          },
+          {
+            "pattern": "minecraft:flower",
+            "color": "white"
+          },
+          {
+            "pattern": "minecraft:stripe_middle",
+            "color": "yellow"
+          },
+          {
+            "pattern": "minecraft:straight_cross",
+            "color": "white"
+          },
+          {
+            "pattern": "minecraft:curly_border",
+            "color": "yellow"
+          },
+          {
+            "pattern": "minecraft:border",
+            "color": "white"
+          }
+        ]
+      }
+      },
+      "title": {
+        "text": "Legionnaire Challenge",
+        "color": "gold",
+        "bold": true,
+        "italic": false
+      },
+      "description": {
+        "text": "\nWin 3 games on Legionnaire!\n",
+        "color": "gray",
+        "bold": false,
+        "italic": false
+      },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "battle:cosmetics/legionnaire/1",
+    "criteria": {
+      "1": {
+        "trigger": "minecraft:impossible"
+      },
+      "2": {
+        "trigger": "minecraft:impossible"
+      },
+      "3": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

@@ -1,0 +1,21 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "book",
+            "components": {
+            "minecraft:custom_data": {
+              "open_cosmetics_dialog":true,
+              "NoDrop":true
+            }
+          }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "battle:lobby/cosmetics/open_dialog/use"
+    }
+  }

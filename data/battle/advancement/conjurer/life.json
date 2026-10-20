@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "blue_dye",
+          "components": {
+            "minecraft:custom_data": {
+              "LifeRune":true,
+              "NoDrop":true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "battle:classes/conjurer/life/item/use"
+  }
+}

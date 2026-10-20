@@ -1,0 +1,12 @@
+execute if entity @a[tag=SpeedPowUp] as @e[type=item_display,nbt={item:{id:"minecraft:sugar",components:{"minecraft:custom_data":{PowerUp:1b,SpeedPowder:1b}}}},limit=1,sort=nearest] at @s run particle minecraft:firework ~ ~ ~ 0.15 0.15 0.15 0.3 200 normal @a
+
+execute as @a[tag=SpeedPowUp] run function battle:ingame/playerdeath/cosmetics/award/checkpower
+
+execute as @a[tag=SpeedPowUp] run playsound minecraft:block.amethyst_block.resonate block @s ~ ~ ~ 100
+execute as @a[tag=SpeedPowUp] run playsound minecraft:block.note_block.bell block @s ~ ~ ~ 100 1.2
+execute as @a[tag=SpeedPowUp] run playsound minecraft:block.note_block.chime block @s ~ ~ ~ 100 1.2
+execute as @a[tag=SpeedPowUp] run give @s sugar[custom_name={"bold":true,"color":"white","italic":false,"text":"Speed Powder"},lore=[[{"bold":false,"color":"white","italic":false,"text":"Consume: Gain "},{"bold":true,"color":"white","italic":false,"text":"speed"},{"bold":false,"color":"white","italic":false,"text":" and "},{"bold":true,"color":"yellow","italic":false,"text":"absorption"}],{"bold":false,"color":"white","italic":false,"text":"momentarily."}," ",{"bold":false,"color":"gray","italic":false,"text":"Takes 1 second to consume."}],custom_data={PowerUp:1b,SpeedPowder:1b},enchantments={"infinity":1},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:1,animation:"drink",sound:"entity.panda.eat",on_consume_effects:[{type:"minecraft:play_sound",sound:"block.deadbush.idle"}]},tooltip_display={hide_tooltip:false,hidden_components:["enchantments","unbreakable","attribute_modifiers","dyed_color","potion_contents","provides_trim_material","potion_duration_scale","enchantment_glint_override","can_break","can_place_on","banner_patterns","provides_banner_patterns"]}] 1
+execute as @a[tag=SpeedPowUp] run tellraw @s ["\n[",{"text":"INFO","bold":true,"color":"#ff9500"},{"text":"]","color":"white"},{"text":" ","color":"gold"},"| ",{"text":"You just collected a Power Up and got:\n- ","color":"#F9CD71"},{"text":"1 Speed Powder","bold":true,"color":"white"}]
+execute as @a[tag=SpeedPowUp] at @s run kill @e[type=item_display,nbt={item:{id:"minecraft:sugar",components:{"minecraft:custom_data":{PowerUp:1b,SpeedPowder:1b}}}},distance=..2,limit=1,sort=nearest]
+execute as @a[tag=SpeedPowUp] at @s run kill @e[type=text_display,tag=SpeedPowder,tag=PowerUp,distance=..4,limit=1,sort=nearest]
+execute as @a[tag=SpeedPowUp] run tag @s remove SpeedPowUp

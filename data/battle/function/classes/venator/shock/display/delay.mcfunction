@@ -1,0 +1,1 @@
+execute as @a[tag=!vena_target,tag=vena_shock_hit] at @s summon snowball run function battle:classes/venator/shock/display/knockback

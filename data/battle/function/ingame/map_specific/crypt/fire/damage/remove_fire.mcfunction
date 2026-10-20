@@ -1,0 +1,1 @@
+execute as @a if items entity @s armor.body minecraft:stone[enchantments~[{enchantments:"battle:self_ignite"}]] run item replace entity @s armor.body with air

@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "tnt",
+          "components": {
+            "minecraft:custom_data": {
+              "prospTNT":true,
+              "NoDrop":true,
+              "PowerUp":true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "battle:classes/prospector/supply/tnt_check"
+  }
+}

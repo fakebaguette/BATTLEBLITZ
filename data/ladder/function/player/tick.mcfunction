@@ -1,0 +1,1 @@
+execute if block ~ ~0.5 ~ minecraft:ladder if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{type_specific:{type:"minecraft:player",input:{jump:1b}},periodic_tick:2}} run function ladder:player/climb_ladder

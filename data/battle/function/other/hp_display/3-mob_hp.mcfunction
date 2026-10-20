@@ -1,0 +1,1 @@
+$data modify storage $(storage_name) mob_display_hp set value "§f + $(mob_hp)"

@@ -1,0 +1,133 @@
+{
+  "type": "multi_action",
+  "title": {
+    "text": "Cosmetics Menu",
+    "type": "text",
+    "color": "#ff2ef8",
+    "bold": true
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Unlock ",
+        "extra": [
+          {
+            "text": "cosmetics ",
+            "color": "light_purple"
+          },
+          "through completing ",
+          {
+            "text": "advancements!",
+            "color": "gold"
+          },
+          {
+            "text": " (Press \"L\")\n\n",
+            "color": "gray"
+          },
+          "Once you complete some, click the \"Crates\" button to open some keys!\n\nThen, once you unlock some cosmetics, use the other buttons below to equip them!"
+        ]
+      },
+      "width": 250
+    }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "columns": 3,
+  "exit_action": {
+    "label": {
+      "text": "[",
+      "extra": [
+        {
+          "text": "CLOSE",
+          "color": "white",
+          "bold": true
+        },
+        "]"
+      ]
+    },
+    "width": 100,
+    "action": {
+      "type": "minecraft:run_command",
+      "command": "/trigger cosmetics_exit_dialog"
+    }
+  },
+  "actions": [
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "KILL EFFECTS",
+            "color": "gold",
+            "bold": true
+          },
+          "]"
+        ]
+      },
+      "width": 120,
+      "action": {
+      "type": "minecraft:run_command",
+      "command": "/trigger cosmetics_open_effects"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "KILL SOUNDS",
+            "color": "yellow",
+            "bold": true
+          },
+          "]"
+        ]
+      },
+      "width": 120,
+      "action": {
+      "type": "minecraft:run_command",
+      "command": "/trigger cosmetics_open_sounds"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "KILL MESSAGES",
+            "color": "white",
+            "bold": true
+          },
+          "]"
+        ]
+      },
+      "width": 120,
+      "action": {
+      "type": "minecraft:run_command",
+      "command": "/trigger cosmetics_open_messages"
+      }
+    },
+    {
+      "label": {
+        "text": "",
+        "extra": [
+          "[",
+          {
+            "text": "OPEN CRATES",
+            "color": "#ff8624",
+            "bold": true
+          },
+          "]"
+        ]
+      },
+      "width": 120,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger cosmetics_open_crates"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+schedule clear battle:classes/conjurer/cycle/main

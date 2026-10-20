@@ -1,0 +1,20 @@
+particle sonic_boom ~ ~ ~ 0 0 0 0 1 normal @a
+
+particle enchanted_hit ^-2.5 ^0.8333333 ^0 0.3 0.3 0.3 0 1 normal @a
+particle enchanted_hit ^-1.6666667 ^0.8333333 ^0 0.3 0.3 0.3 0 1 normal @a
+particle enchanted_hit ^-0.8333333 ^0.8333333 ^0 0.3 0.3 0.3 0 1 normal @a
+particle enchanted_hit ^0 ^0.8333333 ^0 0.3 0.3 0.3 0 1 normal @a
+particle enchanted_hit ^0.8333333 ^0.8333333 ^0 0.3 0.3 0.3 0 1 normal @a
+particle enchanted_hit ^1.6666667 ^0.8333333 ^0 0.3 0.3 0.3 0 1 normal @a
+particle enchanted_hit ^-2.5 ^0 ^0 0.3 0.3 0.3 0 1 normal @a
+particle enchanted_hit ^-1.6666667 ^0 ^0 0.3 0.3 0.3 0 1 normal @a
+particle enchanted_hit ^-0.8333333 ^0 ^0 0.3 0.3 0.3 0 1 normal @a
+particle enchanted_hit ^0 ^0 ^0 0.3 0.3 0.3 0 1 normal @a
+particle enchanted_hit ^0.8333333 ^0 ^0 0.3 0.3 0.3 0 1 normal @a
+particle enchanted_hit ^1.6666667 ^0 ^0 0.3 0.3 0.3 0 1 normal @a
+particle enchanted_hit ^-2.5 ^-0.8333333 ^0 0.3 0.3 0.3 0 1 normal @a
+particle enchanted_hit ^-1.6666667 ^-0.8333333 ^0 0.3 0.3 0.3 0 1 normal @a
+particle enchanted_hit ^-0.8333333 ^-0.8333333 ^0 0.3 0.3 0.3 0 1 normal @a
+particle enchanted_hit ^0 ^-0.8333333 ^0 0.3 0.3 0.3 0 1 normal @a
+particle enchanted_hit ^0.8333333 ^-0.8333333 ^0 0.3 0.3 0.3 0 1 normal @a
+particle enchanted_hit ^1.6666667 ^-0.8333333 ^0 0.3 0.3 0.3 0 1 normal @a

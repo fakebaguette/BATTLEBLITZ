@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "amethyst_shard",
+          "components": {
+            "minecraft:custom_data": {
+              "VenaSword":true,
+              "NoDrop":true
+            }
+          }
+        }
+      }
+      }
+    },
+  "rewards": {
+    "function": "battle:classes/venator/invis/check"
+  }
+}

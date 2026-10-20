@@ -1,0 +1,2 @@
+execute if entity @s[tag=mob_Team1] as @a[tag=!Team1,distance=..1.1,gamemode=adventure] run damage @s 3 player_attack by @n[type=slime]
+execute if entity @s[tag=mob_Team2] as @a[tag=!Team2,distance=..1.1,gamemode=adventure] run damage @s 3 player_attack by @n[type=slime]

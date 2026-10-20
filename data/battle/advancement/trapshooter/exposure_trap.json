@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "comparator",
+          "components": {
+            "minecraft:custom_data": {
+              "exposure_trap":true,
+              "NoDrop":true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "battle:classes/trapshooter/trap/place/1-click"
+  }
+}

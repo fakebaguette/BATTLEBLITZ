@@ -1,0 +1,1 @@
+function battle:lobby/credits/click
